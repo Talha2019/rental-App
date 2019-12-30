@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rentalapp';
+
+  componentTitle = "I am app component from component.ts file"
+
+  clicked(){
+    alert("I am clicked")
+  }
 }
