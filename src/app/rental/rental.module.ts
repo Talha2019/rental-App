@@ -7,18 +7,24 @@ import { RentalListItemComponent } from './rental-list-item/rental-list-item.com
 import {ServiceService} from './shared/service.service';
 import { RentalDetailComponent } from './rental/rental-detail/rental-detail.component'
 import {RentalRoutingModule} from '../rental/rental-routing.module'
+import {HttpClientModule} from '@angular/common/http'
+import {NgPipesModule} from 'ngx-pipes';
+import { UppercasePipe} from '../common/pipes/uppercase.pipe'
 
 @NgModule({
   declarations: [
     RentalComponent,
     RentalListComponent,
     RentalListItemComponent,
-    RentalDetailComponent
+    RentalDetailComponent,
+    UppercasePipe 
   ],
   imports: [
     CommonModule,
     RentalRoutingModule,
-    RouterModule 
+    RouterModule,
+    HttpClientModule,
+    NgPipesModule
   ],
   providers :[ServiceService]
 })

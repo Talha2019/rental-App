@@ -14,7 +14,7 @@ export class RentalListComponent implements OnInit {
 
   ngOnInit() {
 
-    const rentalObservable = this.service.getRental();
+    const rentalObservable = this.service.getRentals();
 
     rentalObservable.subscribe(
       (rentals:Rental[]  ) =>{
