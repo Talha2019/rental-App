@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router'
 import {ServiceService} from '../../shared/service.service'
 import {Rental} from '../../shared/rental.model'
+
 @Component({
   selector: 'app-rental-detail',
   templateUrl: './rental-detail.component.html',

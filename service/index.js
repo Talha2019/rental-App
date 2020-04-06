@@ -1,3 +1,4 @@
+// const cors = require('cors'); 
 const express = require('express');
 const mongoose = require('mongoose')
 const Db = require('./Db/connection');
@@ -20,6 +21,8 @@ mongoose.connect(Db.DB_URI,{
 )
 
 const app = express();
+
+// app.use(cors());
 
 app.use('/api/v1/rentals', rentalRoutes)
 

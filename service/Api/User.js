@@ -1,3 +1,4 @@
+// const cors = require('cors'); 
 const express = require ('express');
 const mongoose = require('mongoose');
 const User = require('../Db/Users');
