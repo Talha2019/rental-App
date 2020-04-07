@@ -1,0 +1,10 @@
+<agm-map (mapReady)="mapReadyHandler()" [latitude]="lat" [longitude]="lng" [zoom]="13">
+    <agm-circle [latitude]="lat" [longitude]="lng" [radius]="800" [fillColor]="'#F44336'" [fillOpacity]="0.4" *ngIf="!isPositionError"></agm-circle>
+
+
+<agm-info-window [latitude]="0" [longitude]="0" [maxWidth]="300" [isOpen]=true *ngIf="isPositionError" >Sorry! Address not found. Change addrress or contact us</agm-info-window>
+ 
+
+</agm-map>
+
+
