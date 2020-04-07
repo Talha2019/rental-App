@@ -13,11 +13,14 @@ import { RentalModule } from './rental/rental.module';
     HeaderComponent,
     
     
+    
+    
   ],
   imports: [
     BrowserModule,
     RentalModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
     
   ],
   providers: [],
