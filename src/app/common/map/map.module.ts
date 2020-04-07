@@ -1,29 +1,27 @@
-
 import { NgModule } from '@angular/core';
-import { MapComponent } from './map.component';
 import { AgmCoreModule } from '@agm/core';
-import {MapService} from '../map/map.service'
-import { CamelizePipe } from 'ngx-pipes'
-import {CommonModule} from '@angular/common'
+import { CommonModule } from '@angular/common';
+
+import { MapComponent } from './map.component';
+import { CamelizePipe } from 'ngx-pipes';
+import { MapService } from './map.service';
+
 @NgModule({
   declarations: [
     MapComponent
   ],
-
   exports: [
-      MapComponent
+    MapComponent
   ],
   imports: [
-    CommonModule,
     AgmCoreModule.forRoot({
-        apiKey: 'AIzaSyBM2Nlw6JxpLu65OBoF7DvVSVSHI9Alm0c'
-      })
-    
+      apiKey: 'AIzaSyBM2Nlw6JxpLu65OBoF7DvVSVSHI9Alm0c'
+    }),
+    CommonModule
   ],
   providers: [
     MapService,
-    CamelizePipe 
+    CamelizePipe
   ]
-
 })
 export class MapModule { }
